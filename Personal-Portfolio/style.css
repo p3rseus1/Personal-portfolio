@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-title: 700 3rem 'Poppins', sans-serif;
+  --font-page: 500 1rem 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(1, 31, 38);
+  color: whitesmoke;
+  height: 4rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 2rem;
+}
+
+#navbar ul li a {
+  font: var(--font-page);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 1rem;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+
+#navbar ul li a:hover {
+  background: rgb(242, 82, 46);
+  transition: 0.3s;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  padding: 0 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgb(88, 135, 140),
+    rgb(23, 106, 115),
+    rgb(1, 31, 38)
+  );
+  color: whitesmoke;
+}
+
+#welcome-section h1 {
+  font: var(--font-title);
+}
+
+#welcome-section p {
+  font: var(--font-page);
+  font-style: italic;
+  color: rgb(242, 82, 46);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 0 1rem;
+  background: rgb(166, 110, 78);
+}
+
+.title-projects {
+  text-align: center;
+  margin: 6rem auto 3rem auto;
+  font: var(--font-title);
+  font-size: 2rem !important;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.links {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin: 0 auto 0 auto;
+  max-width: 55rem;
+}
+
+@media (max-width: 770px) {
+  .links {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+}
+
+.banner-content {
+  background-color: rgb(1, 31, 38);
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.banner-content h3 {
+  padding: 1rem;
+  font: 500 1.2rem 'Poppins', sans-serif;
+}
+
+.code {
+  color: rgb(1, 31, 38);
+  transition: color 0.3s ease-out;
+}
+
+.banner-content:hover .code {
+  color: rgb(242, 82, 46);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  text-decoration: none;
+}
+
+#button {
+  font: var(--font-page);
+  padding: 1.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  background: rgb(88, 135, 140);
+  color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#button span {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+#button:hover {
+  background-color: rgb(23, 106, 115);
+  transition: 0.3s;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+/*Bug no header com o traço, pesquisar depois!*/
+
+.bow {
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+#button:hover .bow {
+  transform: translateX(2px);
+  transition: 0.3s;
+}
+
+#contacts {
+  background: rgb(23, 106, 115);
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.contact-apresentation {
+  text-align: center;
+  margin: 20.7rem 0 2rem 0;
+  color: whitesmoke;
+}
+
+.contact-apresentation h1 {
+  font: var(--font-title);
+}
+
+.contact-apresentation p {
+  font: var(--font-page);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto 16rem auto;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: whitesmoke;
+  font: var(--font-page);
+  font-size: 1.3rem !important;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.social a:hover {
+  transform: translateY(4px);
+  transition: 0.3s;
+}
+
+#line {
+  width: 100%;
+  height: 5px;
+  background: rgb(242, 82, 46);
+}
+
+footer {
+  background: rgb(23, 106, 115);
+  color: whitesmoke;
+  font: var(--font-page);
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div {
+  padding: 1rem;
+}
+
+footer a .fa-free-code-camp {
+  color: whitesmoke;
+  text-decoration: none;
+}
